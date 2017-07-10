@@ -29,8 +29,10 @@ class AsyncOperation : Operation {
 	fileprivate(set) var state = State.ready {
 		willSet {
 			willChangeValue(forKey: state.key)
+			willChangeValue(forKey: newValue.key)
 		}
 		didSet {
+			didChangeValue(forKey: oldValue.key)
 			didChangeValue(forKey: state.key)
 		}
 	}
@@ -47,9 +49,9 @@ class AsyncOperation : Operation {
 		return state == .finished
 	}
 
-//	override var isReady: Bool {
-//		return state == .ready
-//	}
+	final override var isReady: Bool {
+		return state == .ready
+	}
 
 
 	//MARK: Setup
@@ -59,14 +61,14 @@ class AsyncOperation : Operation {
 		state = .finished
 	}
 
-	/// You **should** override this method and do your async work here.
-	///	**Must** call `markFinished()` inside your override when async work is done since operation needs to be mark `finished`.
+	/// You **should** override this method and start and/or do your async work here.
+	///	**Must** call `markFinished()` inside your override
+	///	when async work is done since operation needs to be mark `finished`.
 	func workItem() {
 		markFinished()
 	}
 
 	required override init() {
-		fatalError("Can't use this directly. Subclass and override only workItem() *and* make sure you call markCompleted() where appropriate.")
 	}
 
 	//MARK: Control
@@ -77,7 +79,6 @@ class AsyncOperation : Operation {
 			return
 		}
 
-		state = .ready
 		main()
 	}
 
