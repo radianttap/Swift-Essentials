@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1409E8A1F27E4EB001145D9 /* Swift-Essentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Swift-Essentials.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1409E8A1F27E4EB001145D9 /* SwiftEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1409E8D1F27E4EB001145D9 /* Swift-Essentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Essentials.h"; sourceTree = "<group>"; };
 		A1409E8E1F27E4EB001145D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1409E971F27E54F001145D9 /* Embeddable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Embeddable.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		A1409E8B1F27E4EB001145D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1409E8A1F27E4EB001145D9 /* Swift-Essentials.framework */,
+				A1409E8A1F27E4EB001145D9 /* SwiftEssentials.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A1409E891F27E4EB001145D9 /* Swift-Essentials */ = {
+		A1409E891F27E4EB001145D9 /* SwiftEssentials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1409E921F27E4EB001145D9 /* Build configuration list for PBXNativeTarget "Swift-Essentials" */;
+			buildConfigurationList = A1409E921F27E4EB001145D9 /* Build configuration list for PBXNativeTarget "SwiftEssentials" */;
 			buildPhases = (
 				A1409E851F27E4EB001145D9 /* Sources */,
 				A1409E861F27E4EB001145D9 /* Frameworks */,
@@ -146,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = "Swift-Essentials";
+			name = SwiftEssentials;
 			productName = "Swift-Essentials";
-			productReference = A1409E8A1F27E4EB001145D9 /* Swift-Essentials.framework */;
+			productReference = A1409E8A1F27E4EB001145D9 /* SwiftEssentials.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1409E891F27E4EB001145D9 /* Swift-Essentials */,
+				A1409E891F27E4EB001145D9 /* SwiftEssentials */,
 			);
 		};
 /* End PBXProject section */
@@ -367,7 +367,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1409E921F27E4EB001145D9 /* Build configuration list for PBXNativeTarget "Swift-Essentials" */ = {
+		A1409E921F27E4EB001145D9 /* Build configuration list for PBXNativeTarget "SwiftEssentials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1409E931F27E4EB001145D9 /* Debug */,

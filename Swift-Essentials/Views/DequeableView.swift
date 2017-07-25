@@ -12,20 +12,20 @@ import UIKit
 extension UICollectionView {
 
 	//	register for the Class-based cell
-	func register<T: UICollectionViewCell>(_: T.Type)
+	public func register<T: UICollectionViewCell>(_: T.Type)
 		where T: ReusableView
 	{
 		register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
 	}
 
 	//	register for the Nib-based cell
-	func register<T: UICollectionViewCell>(_: T.Type) where
+	public func register<T: UICollectionViewCell>(_: T.Type) where
 		T:NibReusableView
 	{
 		register(T.nib, forCellWithReuseIdentifier: T.reuseIdentifier)
 	}
 
-	func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T
+	public func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T
 		where T:ReusableView
 	{
 		//	this deque and cast can fail if you forget to register the proper cell
@@ -41,20 +41,20 @@ extension UICollectionView {
 extension UITableView {
 
 	//	register for the Class-based cell
-	func register<T: UITableViewCell>(_: T.Type)
+	public func register<T: UITableViewCell>(_: T.Type)
 		where T: ReusableView
 	{
 		register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
 	}
 
 	//	register for the Nib-based cell
-	func register<T: UITableViewCell>(_: T.Type)
+	public func register<T: UITableViewCell>(_: T.Type)
 		where T:NibReusableView
 	{
 		register(T.nib, forCellReuseIdentifier: T.reuseIdentifier)
 	}
 
-	func dequeueReusableCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T
+  public func dequeueReusableCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T
 		where T:ReusableView
 	{
 		guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T else {

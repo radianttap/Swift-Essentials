@@ -28,7 +28,7 @@ open class NotificationToken {
 	}
 }
 
-open struct NotificationDescriptor<A> {
+public struct NotificationDescriptor<A> {
 	let name: Notification.Name
 }
 
