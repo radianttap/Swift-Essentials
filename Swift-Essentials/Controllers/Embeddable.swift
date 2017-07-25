@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import TinyConstraints
 
 extension UIViewController {
-	func embed<T>(controller vc: T, into parentView: UIView?)
+	public func embed<T>(controller vc: T, into parentView: UIView?)
 		where T: UIViewController
 	{
 		let container = parentView ?? self.view!
@@ -18,14 +17,14 @@ extension UIViewController {
 		addChildViewController(vc)
 		container.addSubview(vc.view)
 		vc.view.translatesAutoresizingMaskIntoConstraints = false
-		vc.view.edges(to: container)
+		vc.view.frame = parentView?.frame ?? self.view.frame
 		vc.didMove(toParentViewController: self)
 
 		//	Note: after this, save the controller reference
 		//	somewhere in calling scope
 	}
 
-	func unembed(controller: UIViewController?) {
+	public func unembed(controller: UIViewController?) {
 		guard let controller = controller else { return }
 
 		controller.willMove(toParentViewController: nil)
