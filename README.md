@@ -36,11 +36,11 @@ Create a CartFile to manage your dependencies:
 
 Open the Cartfile and add this as a dependency. (in OGDL):
 
-    github "sevenapps/PathToRepo*" "master"
+    github "https://github.com/radianttap/Swift-Essentials" "master"
 
 Update your project to include the framework:
 
-    Carthage update --platform iOS
+       bin/update
 
 Add the framework to 'Embedded Binaries' in the Xcode Project by dragging and dropping the framework created in
 
