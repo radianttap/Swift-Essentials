@@ -23,4 +23,9 @@ extension Bundle {
 		guard let str = main.object(forInfoDictionaryKey: "CFBundleVersion") as? String else { return "" }
 		return str
 	}
+
+	static var identifier: String {
+		guard let str = main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String else { return "" }
+		return str
+	}
 }
