@@ -15,8 +15,8 @@
 import Foundation
 
 public class NotificationToken {
-	let token: NSObjectProtocol
-	let center: NotificationCenter
+	public let token: NSObjectProtocol
+	public let center: NotificationCenter
 
 	public init(token: NSObjectProtocol, center: NotificationCenter? = nil) {
 		self.token = token
@@ -29,7 +29,7 @@ public class NotificationToken {
 }
 
 public struct NotificationDescriptor<A> {
-	let name: Notification.Name
+	public let name: Notification.Name
 }
 
 public extension NotificationCenter {
