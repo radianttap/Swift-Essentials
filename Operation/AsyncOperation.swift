@@ -64,7 +64,7 @@ open class AsyncOperation : Operation {
 	/// You **should** override this method and start and/or do your async work here.
 	///	**Must** call `markFinished()` inside your override
 	///	when async work is done since operation needs to be mark `finished`.
-	func workItem() {
+	open func workItem() {
 		markFinished()
 	}
 
