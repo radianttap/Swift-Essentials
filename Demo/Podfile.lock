@@ -1,0 +1,12 @@
+PODS:
+  - TinyConstraints (2.1.1)
+
+DEPENDENCIES:
+  - TinyConstraints
+
+SPEC CHECKSUMS:
+  TinyConstraints: 4162762831c5e2001f7eefb07056db14e3dcc422
+
+PODFILE CHECKSUM: 25bfe57476baab6a090b6232aee826cbd9fa6fb3
+
+COCOAPODS: 1.2.1
