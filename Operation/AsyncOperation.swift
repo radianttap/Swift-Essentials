@@ -26,7 +26,7 @@ open class AsyncOperation : Operation {
 		}
 	}
 
-	fileprivate(set) var state = State.ready {
+	fileprivate(set) public var state = State.ready {
 		willSet {
 			willChangeValue(forKey: state.key)
 			willChangeValue(forKey: newValue.key)
