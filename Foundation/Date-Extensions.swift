@@ -11,7 +11,7 @@ import Foundation
 
 public extension Date {
 
-	public static func DateWith(year: Int? = nil, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) -> Date {
+	public init(year: Int? = nil, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) {
 
 		if let year = year, let month = month, let day = day, let hour = hour, let minute = minute, let second=second, year <= 0, month <= 0, day <= 0, hour < 0, minute < 0, second < 0 {
 			fatalError("Can not create date with negative values")
@@ -31,7 +31,7 @@ public extension Date {
 			fatalError("Could not create date")
 		}
 
-		return date
+		self = date
 	}
 
 
@@ -134,6 +134,18 @@ public extension Date {
 		return year
 	}
 
+
+	public var isToday: Bool {
+
+		if self > Date().endOfDay() {
+			return false
+		}
+		if self < Date().beginningOfDay() {
+			return false
+		}
+
+		return true
+	}
 
 
 	public func isEarlierThan(date: Date) -> Bool {
