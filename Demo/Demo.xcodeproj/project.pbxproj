@@ -154,9 +154,9 @@
 		D05E0D671F486EDF0000EAF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D05E0D681F486EDF0000EAF1 /* DequeableView.swift */,
-				D05E0D691F486EDF0000EAF1 /* NibLoadable.swift */,
 				D05E0D6A1F486EDF0000EAF1 /* ReusableView.swift */,
+				D05E0D691F486EDF0000EAF1 /* NibLoadable.swift */,
+				D05E0D681F486EDF0000EAF1 /* DequeableView.swift */,
 			);
 			name = Views;
 			path = ../Views;
