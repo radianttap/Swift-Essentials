@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A3C2947338D7444563BA79ED2B6FA0 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8065292A58C8DDD75B067221AEE516 /* Abstraction.swift */; };
 		04AED24969D3EA19A6DB483FF3FFB877 /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FB654072FF2B834B6D09682B1A11529 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D356D2E8A71B814B4A28AAB8E1287 /* Constraints.swift */; };
+		2BF84166308F3260454BB0009019D476 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90270113FB73BFEE833A111D17D837DC /* TinyConstraints-dummy.m */; };
+		34C1648594D7AF0CBD14774046F1B24F /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B36A455C25EC7FFE080173BC205FC /* TinyConstraints+superview.swift */; };
+		3E6F311E85950912D58296388EC931D1 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8B3DFE1D40FED16980E5776F868FE8 /* TinyConstraints.swift */; };
 		489B4C42B78602ABF89B191276ADB92B /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */; };
-		4AB349CDFEE0CE40B176C44ABB03B746 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B4E7E1ABC9ACBED0F4B779D1873176 /* TinyConstraints.swift */; };
-		4FEF0AF394F26390560090A347C9BD0F /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5429F4C270E36731F928DB50F5AF314 /* Constrainable.swift */; };
-		623DEDEEADB4F63C7F8C4D504257DB6A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD1BB1AA96D28955831A376656032A /* Stack.swift */; };
 		78F9DD688199692C133ED14A301DB523 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9310F0F7F32DAFDDE1D5104D123F5FB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B3A8A648669D52DCE25199080A5F4B37 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D382A2AFB611D982E204E658AFC73 /* TinyConstraints-dummy.m */; };
-		C0B0BBE3DCF58C7BCC7B878A818EA8D4 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447F6D31D93E9EA48A35FC653A57006 /* Abstraction.swift */; };
-		E0874DF4874EA91D4EF1D81093D5BC1C /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6364D3AE66CB9DAAAA751A770F634D98 /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0874DF4874EA91D4EF1D81093D5BC1C /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA935841DE55EA9F49252AED146016D3 /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F22AA6E925290241C6EC2ED4163919 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F269E4F2C06908272D92573D3CA82 /* Constrainable.swift */; };
+		F442223188AF74C457DFBB8CFAB6A65C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25986184A8E5CE7C392028CFE6361C4 /* Constraints.swift */; };
+		FEF7B247377471BE412F885748DE90F0 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB604E54EC59FFD9CB6D3452F8DD746 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,30 +33,31 @@
 
 /* Begin PBXFileReference section */
 		03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Demo-umbrella.h"; sourceTree = "<group>"; };
-		2BB9C4780C9845D6912CC8D994079B47 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		05196A21A268498DA93690321C105734 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
 		322419E99883B306EE7EC77959FCC8DF /* Pods-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Demo.modulemap"; sourceTree = "<group>"; };
 		3CD5A30239C90F1B549B4AB9299ECF16 /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		3D653C9DA16200D75AD14323AA830C6B /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
-		4447F6D31D93E9EA48A35FC653A57006 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
-		55B4E7E1ABC9ACBED0F4B779D1873176 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
-		6364D3AE66CB9DAAAA751A770F634D98 /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6CB604E54EC59FFD9CB6D3452F8DD746 /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
 		71940C1CEB7995DC34CFE54CAF1AEF88 /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		737F269E4F2C06908272D92573D3CA82 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		7D2B36A455C25EC7FFE080173BC205FC /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
 		8A66B6FE75B5BE7E08CADAFD677AA3C7 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B262EF57021E3337AA4246F12B66F20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FCD1BB1AA96D28955831A376656032A /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		90270113FB73BFEE833A111D17D837DC /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB0D382A2AFB611D982E204E658AFC73 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
-		C5429F4C270E36731F928DB50F5AF314 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		9D8065292A58C8DDD75B067221AEE516 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
 		C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
 		CA19694C0AC41D598DE4ABFEB300E619 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA935841DE55EA9F49252AED146016D3 /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		CC0BFC66C0993D792E7971F246448401 /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
 		CC6A59B0ADA6CB2F51DAE6508E437829 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D25986184A8E5CE7C392028CFE6361C4 /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
 		DAB0701F8F25395B1ED46510ED4B9797 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		E68F8C86FB3267A3C87983DA9E269889 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E76D356D2E8A71B814B4A28AAB8E1287 /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
-		E80B8202C2DB6A268CB8A841F07FE74B /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
-		F48FEC88C9A13ED19BD8632887F7AFA6 /* TinyConstraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.xcconfig; sourceTree = "<group>"; };
+		F4021F7E92732E9846AA51DEF7DBB570 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
 		F4D5213E0467B5141CD45285CF1F2F19 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Demo.framework; path = "Pods-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8B3DFE1D40FED16980E5776F868FE8 /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		FFFCC637EC1793EBDA67CAB8FB794763 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0544C7FFFC866AFC70B22558F9065A1E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFFCC637EC1793EBDA67CAB8FB794763 /* Info.plist */,
+				CC0BFC66C0993D792E7971F246448401 /* TinyConstraints.modulemap */,
+				05196A21A268498DA93690321C105734 /* TinyConstraints.xcconfig */,
+				90270113FB73BFEE833A111D17D837DC /* TinyConstraints-dummy.m */,
+				F4021F7E92732E9846AA51DEF7DBB570 /* TinyConstraints-prefix.pch */,
+				CA935841DE55EA9F49252AED146016D3 /* TinyConstraints-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
 		160DFAED2A8958FD73DE58BE6D18D09C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,15 +103,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68738CC3654167040DD1D2DB49868612 /* TinyConstraints */ = {
+		47D41FBAE08636674B250416F3CE63AE /* TinyConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				4447F6D31D93E9EA48A35FC653A57006 /* Abstraction.swift */,
-				C5429F4C270E36731F928DB50F5AF314 /* Constrainable.swift */,
-				E76D356D2E8A71B814B4A28AAB8E1287 /* Constraints.swift */,
-				8FCD1BB1AA96D28955831A376656032A /* Stack.swift */,
-				55B4E7E1ABC9ACBED0F4B779D1873176 /* TinyConstraints.swift */,
-				BE7C06D0F110040A05AFF3679F569056 /* Support Files */,
+				9D8065292A58C8DDD75B067221AEE516 /* Abstraction.swift */,
+				737F269E4F2C06908272D92573D3CA82 /* Constrainable.swift */,
+				D25986184A8E5CE7C392028CFE6361C4 /* Constraints.swift */,
+				6CB604E54EC59FFD9CB6D3452F8DD746 /* Stack.swift */,
+				FC8B3DFE1D40FED16980E5776F868FE8 /* TinyConstraints.swift */,
+				7D2B36A455C25EC7FFE080173BC205FC /* TinyConstraints+superview.swift */,
+				0544C7FFFC866AFC70B22558F9065A1E /* Support Files */,
 			);
 			name = TinyConstraints;
 			path = TinyConstraints;
@@ -114,10 +131,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C97493B018AA17C460DBE30C8A5F91A5 /* Pods */,
+				8A550A56F4606360CD946232A6965FB3 /* Pods */,
 				160DFAED2A8958FD73DE58BE6D18D09C /* Products */,
 				6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8A550A56F4606360CD946232A6965FB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47D41FBAE08636674B250416F3CE63AE /* TinyConstraints */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -126,28 +151,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE7C06D0F110040A05AFF3679F569056 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B262EF57021E3337AA4246F12B66F20 /* Info.plist */,
-				2BB9C4780C9845D6912CC8D994079B47 /* TinyConstraints.modulemap */,
-				F48FEC88C9A13ED19BD8632887F7AFA6 /* TinyConstraints.xcconfig */,
-				BB0D382A2AFB611D982E204E658AFC73 /* TinyConstraints-dummy.m */,
-				E80B8202C2DB6A268CB8A841F07FE74B /* TinyConstraints-prefix.pch */,
-				6364D3AE66CB9DAAAA751A770F634D98 /* TinyConstraints-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TinyConstraints";
-			sourceTree = "<group>";
-		};
-		C97493B018AA17C460DBE30C8A5F91A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				68738CC3654167040DD1D2DB49868612 /* TinyConstraints */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -202,7 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB9C8827A72E7FF93507EC6F0FBE7C1 /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
 			buildPhases = (
-				EAA03201AE93226728977A9D05F98B0D /* Sources */,
+				8BAFC3C5B2C877C0E44A12A7D382DCBE /* Sources */,
 				C6C53A53244CEA1A31E619B159332470 /* Frameworks */,
 				E19CF4015BBC5F86A7ADA88417AFFBD0 /* Headers */,
 			);
@@ -261,16 +264,17 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EAA03201AE93226728977A9D05F98B0D /* Sources */ = {
+		8BAFC3C5B2C877C0E44A12A7D382DCBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B0BBE3DCF58C7BCC7B878A818EA8D4 /* Abstraction.swift in Sources */,
-				4FEF0AF394F26390560090A347C9BD0F /* Constrainable.swift in Sources */,
-				1FB654072FF2B834B6D09682B1A11529 /* Constraints.swift in Sources */,
-				623DEDEEADB4F63C7F8C4D504257DB6A /* Stack.swift in Sources */,
-				B3A8A648669D52DCE25199080A5F4B37 /* TinyConstraints-dummy.m in Sources */,
-				4AB349CDFEE0CE40B176C44ABB03B746 /* TinyConstraints.swift in Sources */,
+				04A3C2947338D7444563BA79ED2B6FA0 /* Abstraction.swift in Sources */,
+				E4F22AA6E925290241C6EC2ED4163919 /* Constrainable.swift in Sources */,
+				F442223188AF74C457DFBB8CFAB6A65C /* Constraints.swift in Sources */,
+				FEF7B247377471BE412F885748DE90F0 /* Stack.swift in Sources */,
+				34C1648594D7AF0CBD14774046F1B24F /* TinyConstraints+superview.swift in Sources */,
+				2BF84166308F3260454BB0009019D476 /* TinyConstraints-dummy.m in Sources */,
+				3E6F311E85950912D58296388EC931D1 /* TinyConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +300,7 @@
 /* Begin XCBuildConfiguration section */
 		0BAF09D852184BC78B3ACEDD3472D2A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FEC88C9A13ED19BD8632887F7AFA6 /* TinyConstraints.xcconfig */;
+			baseConfigurationReference = 05196A21A268498DA93690321C105734 /* TinyConstraints.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -501,7 +505,7 @@
 		};
 		C4BC3578386D5E67336B9839E3505158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F48FEC88C9A13ED19BD8632887F7AFA6 /* TinyConstraints.xcconfig */;
+			baseConfigurationReference = 05196A21A268498DA93690321C105734 /* TinyConstraints.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

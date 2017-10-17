@@ -1,11 +1,11 @@
 PODS:
-  - TinyConstraints (2.1.1)
+  - TinyConstraints (3.0.1)
 
 DEPENDENCIES:
   - TinyConstraints
 
 SPEC CHECKSUMS:
-  TinyConstraints: 4162762831c5e2001f7eefb07056db14e3dcc422
+  TinyConstraints: 77cb4735982941687268bb6f324badd0ae29ad46
 
 PODFILE CHECKSUM: 25bfe57476baab6a090b6232aee826cbd9fa6fb3
 
