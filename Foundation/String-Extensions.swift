@@ -1,6 +1,7 @@
 //
 //  String-Extensions.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -8,7 +9,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
 	//	Credits: Leo Dabus
 	//	https://stackoverflow.com/questions/32305891/index-of-a-substring-in-a-string-with-swift
 

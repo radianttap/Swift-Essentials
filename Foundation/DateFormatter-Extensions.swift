@@ -1,6 +1,7 @@
 //
 //  DateFormatter-Extensions.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -8,7 +9,7 @@
 
 import Foundation
 
-public extension DateFormatter {
+extension DateFormatter {
 	public static let iso8601Formatter: DateFormatter = {
 		let df = DateFormatter()
 		df.locale = Locale(identifier: "en_US_POSIX")

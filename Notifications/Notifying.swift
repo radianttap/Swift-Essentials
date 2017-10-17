@@ -1,6 +1,7 @@
 //
 //  Notifying.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -32,7 +33,7 @@ public struct NotificationDescriptor<A> {
 	public let name: Notification.Name
 }
 
-public extension NotificationCenter {
+extension NotificationCenter {
 	public func addObserver<A>(for descriptor: NotificationDescriptor<A>,
 	                 queue: OperationQueue? = nil,
 	                 using block: @escaping (A) -> ()) -> NotificationToken {

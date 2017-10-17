@@ -1,6 +1,7 @@
 //
 //  NibLoadable.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/

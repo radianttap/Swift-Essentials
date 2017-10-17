@@ -1,6 +1,7 @@
 //
 //  DequeableView.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -9,7 +10,7 @@
 import UIKit
 
 
-public extension UICollectionView {
+extension UICollectionView {
 
 	//	register for the Class-based cell
 	public func register<T: UICollectionViewCell>(_: T.Type)
@@ -63,7 +64,7 @@ public extension UICollectionView {
 }
 
 
-public extension UITableView {
+extension UITableView {
 
 	//	register for the Class-based cell
 	public func register<T: UITableViewCell>(_: T.Type)

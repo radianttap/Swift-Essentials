@@ -1,6 +1,7 @@
 //
 //  Date-Extensions.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -9,7 +10,7 @@
 import Foundation
 
 
-public extension Date {
+extension Date {
 
 	public init(year: Int? = nil, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) {
 
@@ -86,7 +87,7 @@ public extension Date {
 
 }
 
-public extension Date {
+extension Date {
 
 	public func day() -> Int {
 

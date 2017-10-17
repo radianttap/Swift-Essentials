@@ -1,6 +1,7 @@
 //
 //  Bundle-Extensions.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
@@ -8,7 +9,7 @@
 
 import Foundation
 
-public extension Bundle {
+extension Bundle {
 	public static var appName: String {
 		guard let str = main.object(forInfoDictionaryKey: "CFBundleName") as? String else { return "" }
 		return str

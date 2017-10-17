@@ -1,6 +1,7 @@
 //
 //  AsyncOperation.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2017 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/

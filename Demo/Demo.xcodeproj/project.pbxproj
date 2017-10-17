@@ -25,6 +25,13 @@
 		D05E0D721F486EF80000EAF1 /* DequeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E0D681F486EDF0000EAF1 /* DequeableView.swift */; };
 		D05E0D731F486EF80000EAF1 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E0D691F486EDF0000EAF1 /* NibLoadable.swift */; };
 		D05E0D741F486EF80000EAF1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E0D6A1F486EDF0000EAF1 /* ReusableView.swift */; };
+		D0EE20141F95F7B000173B55 /* DispatchQueue-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE20111F95F7B000173B55 /* DispatchQueue-Extensions.swift */; };
+		D0EE20151F95F7B000173B55 /* FileManager-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE20121F95F7B000173B55 /* FileManager-Extensions.swift */; };
+		D0EE20161F95F7B000173B55 /* OperationQueue-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE20131F95F7B000173B55 /* OperationQueue-Extensions.swift */; };
+		D0EE201C1F95FCA600173B55 /* UIFont-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE20181F95FCA600173B55 /* UIFont-Extensions.swift */; };
+		D0EE201D1F95FCA600173B55 /* UILayoutPriority-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE20191F95FCA600173B55 /* UILayoutPriority-Extensions.swift */; };
+		D0EE201E1F95FCA600173B55 /* UIScrollView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE201A1F95FCA600173B55 /* UIScrollView-Extensions.swift */; };
+		D0EE201F1F95FCA600173B55 /* UIView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE201B1F95FCA600173B55 /* UIView-Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		D05E0D681F486EDF0000EAF1 /* DequeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeableView.swift; sourceTree = "<group>"; };
 		D05E0D691F486EDF0000EAF1 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		D05E0D6A1F486EDF0000EAF1 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		D0EE20111F95F7B000173B55 /* DispatchQueue-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE20121F95F7B000173B55 /* FileManager-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE20131F95F7B000173B55 /* OperationQueue-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE20181F95FCA600173B55 /* UIFont-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE20191F95FCA600173B55 /* UILayoutPriority-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE201A1F95FCA600173B55 /* UIScrollView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView-Extensions.swift"; sourceTree = "<group>"; };
+		D0EE201B1F95FCA600173B55 /* UIView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,7 @@
 		D05E0D551F486E5C0000EAF1 /* Essentials */ = {
 			isa = PBXGroup;
 			children = (
+				D0EE20171F95FCA600173B55 /* UIKit */,
 				D05E0D5C1F486EDF0000EAF1 /* Controllers */,
 				D05E0D5F1F486EDF0000EAF1 /* Foundation */,
 				D05E0D631F486EDF0000EAF1 /* Notifications */,
@@ -129,6 +144,9 @@
 		D05E0D5F1F486EDF0000EAF1 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D0EE20111F95F7B000173B55 /* DispatchQueue-Extensions.swift */,
+				D0EE20121F95F7B000173B55 /* FileManager-Extensions.swift */,
+				D0EE20131F95F7B000173B55 /* OperationQueue-Extensions.swift */,
 				D036A9721F48F309001E671B /* DateFormatter-Extensions.swift */,
 				D036A9711F48F309001E671B /* NumberFormatter-Extensions.swift */,
 				D05E0D601F486EDF0000EAF1 /* Bundle-Extensions.swift */,
@@ -166,6 +184,18 @@
 			);
 			name = Views;
 			path = ../Views;
+			sourceTree = "<group>";
+		};
+		D0EE20171F95FCA600173B55 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE20181F95FCA600173B55 /* UIFont-Extensions.swift */,
+				D0EE20191F95FCA600173B55 /* UILayoutPriority-Extensions.swift */,
+				D0EE201A1F95FCA600173B55 /* UIScrollView-Extensions.swift */,
+				D0EE201B1F95FCA600173B55 /* UIView-Extensions.swift */,
+			);
+			name = UIKit;
+			path = ../UIKit;
 			sourceTree = "<group>";
 		};
 		EBF2E1A40BFC35124C5337A2 /* Pods */ = {
@@ -300,19 +330,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05E0D6C1F486EE80000EAF1 /* StoryboardLoadable.swift in Sources */,
+				D0EE201E1F95FCA600173B55 /* UIScrollView-Extensions.swift in Sources */,
 				D05E0D701F486EF00000EAF1 /* Notifying.swift in Sources */,
 				D05E0D6E1F486EEC0000EAF1 /* Date-Extensions.swift in Sources */,
+				D0EE20141F95F7B000173B55 /* DispatchQueue-Extensions.swift in Sources */,
+				D0EE201C1F95FCA600173B55 /* UIFont-Extensions.swift in Sources */,
 				D05E0D741F486EF80000EAF1 /* ReusableView.swift in Sources */,
 				D036A9741F48F309001E671B /* DateFormatter-Extensions.swift in Sources */,
+				D0EE201F1F95FCA600173B55 /* UIView-Extensions.swift in Sources */,
 				D05E0D6F1F486EEC0000EAF1 /* String-Extensions.swift in Sources */,
 				D05E0D6D1F486EEC0000EAF1 /* Bundle-Extensions.swift in Sources */,
 				D05E0D731F486EF80000EAF1 /* NibLoadable.swift in Sources */,
 				D05E0D721F486EF80000EAF1 /* DequeableView.swift in Sources */,
 				D05E0D461F486D970000EAF1 /* ViewController.swift in Sources */,
+				D0EE201D1F95FCA600173B55 /* UILayoutPriority-Extensions.swift in Sources */,
 				D05E0D441F486D970000EAF1 /* AppDelegate.swift in Sources */,
 				D036A9731F48F309001E671B /* NumberFormatter-Extensions.swift in Sources */,
 				D05E0D711F486EF30000EAF1 /* AsyncOperation.swift in Sources */,
 				D05E0D6B1F486EE80000EAF1 /* Embeddable.swift in Sources */,
+				D0EE20161F95F7B000173B55 /* OperationQueue-Extensions.swift in Sources */,
+				D0EE20151F95F7B000173B55 /* FileManager-Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,17 @@
 //
 //  Embeddable.swift
 //  Radiant Tap Essentials
+//	https://github.com/radianttap/swift-essentials
 //
 //  Copyright © 2016 Radiant Tap
 //  MIT License · http://choosealicense.com/licenses/mit/
 //
+//	Uses: https://github.com/roberthein/TinyConstraints
 
 import UIKit
 import TinyConstraints
 
-public extension UIViewController {
+extension UIViewController {
 	///	(view, parentView) -> Void
 	public typealias LayoutBlock = (UIView, UIView) -> Void
 
