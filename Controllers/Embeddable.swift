@@ -17,11 +17,7 @@ extension UIViewController {
 
 	public func embed<T>(controller vc: T, into parentView: UIView?, layout: LayoutBlock = {
 		v, pv in
-		let constraints = v.edges(to: pv, isActive: false)
-		constraints.forEach {
-			$0.priority = UILayoutPriority(999)
-			$0.isActive = true
-		}
+		v.edges(to: pv, priority: LayoutPriority(999))
 	})
 		where T: UIViewController
 	{
