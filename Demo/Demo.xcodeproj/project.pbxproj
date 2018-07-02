@@ -14,6 +14,7 @@
 		D031814220EA3DBF006F3183 /* String-UI-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813C20EA3DBE006F3183 /* String-UI-Extensions.swift */; };
 		D031814320EA3DBF006F3183 /* UIAlertController-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813D20EA3DBF006F3183 /* UIAlertController-Extensions.swift */; };
 		D031814520EA3FE4006F3183 /* UICollectionView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031814420EA3FE4006F3183 /* UICollectionView-Extensions.swift */; };
+		D031814720EA4074006F3183 /* Swift-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031814620EA4074006F3183 /* Swift-Extensions.swift */; };
 		D036A9731F48F309001E671B /* NumberFormatter-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036A9711F48F309001E671B /* NumberFormatter-Extensions.swift */; };
 		D036A9741F48F309001E671B /* DateFormatter-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036A9721F48F309001E671B /* DateFormatter-Extensions.swift */; };
 		D05E0D441F486D970000EAF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E0D431F486D970000EAF1 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		D031813C20EA3DBE006F3183 /* String-UI-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-UI-Extensions.swift"; sourceTree = "<group>"; };
 		D031813D20EA3DBF006F3183 /* UIAlertController-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController-Extensions.swift"; sourceTree = "<group>"; };
 		D031814420EA3FE4006F3183 /* UICollectionView-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView-Extensions.swift"; sourceTree = "<group>"; };
+		D031814620EA4074006F3183 /* Swift-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Swift-Extensions.swift"; path = "../Sources/Swift-Extensions.swift"; sourceTree = "<group>"; };
 		D036A9711F48F309001E671B /* NumberFormatter-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter-Extensions.swift"; sourceTree = "<group>"; };
 		D036A9721F48F309001E671B /* DateFormatter-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter-Extensions.swift"; sourceTree = "<group>"; };
 		D05E0D401F486D970000EAF1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 		D05E0D551F486E5C0000EAF1 /* Essentials */ = {
 			isa = PBXGroup;
 			children = (
+				D031814620EA4074006F3183 /* Swift-Extensions.swift */,
 				D0EE20171F95FCA600173B55 /* UIKit */,
 				D05E0D5C1F486EDF0000EAF1 /* Controllers */,
 				D05E0D5F1F486EDF0000EAF1 /* Foundation */,
@@ -344,6 +347,7 @@
 				D0EE20141F95F7B000173B55 /* DispatchQueue-Extensions.swift in Sources */,
 				D0EE201C1F95FCA600173B55 /* UIFont-Extensions.swift in Sources */,
 				D031813F20EA3DBF006F3183 /* UITableView-Extensions.swift in Sources */,
+				D031814720EA4074006F3183 /* Swift-Extensions.swift in Sources */,
 				D05E0D741F486EF80000EAF1 /* ReusableView.swift in Sources */,
 				D031813E20EA3DBF006F3183 /* UIColor-Extensions.swift in Sources */,
 				D036A9741F48F309001E671B /* DateFormatter-Extensions.swift in Sources */,
