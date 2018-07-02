@@ -270,6 +270,17 @@ extension Date {
 	}
 
 
+	public func add(weeks: Int) -> Date {
+
+		let calendar = Calendar.current
+		var components = DateComponents()
+		components.weekOfYear = weeks
+
+		guard let newDate = calendar.date(byAdding: components, to: self) else { return self }
+
+		return newDate
+	}
+
 
 	public func add(months: Int) -> Date {
 

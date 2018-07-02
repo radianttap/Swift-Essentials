@@ -38,8 +38,10 @@ extension NotificationCenter {
 	                 queue: OperationQueue? = nil,
 	                 using block: @escaping (A) -> ()) -> NotificationToken {
 
-		return NotificationToken(token: addObserver(forName: descriptor.name, object: nil, queue: queue, using: { note in
-			block(note.object as! A)
+		return NotificationToken(token: addObserver(forName: descriptor.name, object: nil, queue: queue, using: {
+			note in
+			guard let object = note.object as? A else { return }
+			block(object)
 		}), center: self)
 	}
 
