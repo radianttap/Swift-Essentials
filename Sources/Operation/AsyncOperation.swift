@@ -15,7 +15,7 @@ open class AsyncOperation : Operation {
 		case executing
 		case finished
 
-		fileprivate var key: String {
+		private var key: String {
 			switch self {
 			case .ready:
 				return "isReady"
@@ -27,7 +27,7 @@ open class AsyncOperation : Operation {
 		}
 	}
 
-	fileprivate(set) public var state = State.ready {
+	private(set) public var state = State.ready {
 		willSet {
 			willChangeValue(forKey: state.key)
 			willChangeValue(forKey: newValue.key)

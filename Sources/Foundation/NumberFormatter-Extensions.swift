@@ -13,7 +13,7 @@ extension NumberFormatter {
 
 	///	Formatter which creates Decimal numbers format with exactly two decimal places,
 	///	uses Locale.current
-	public static fileprivate(set) var moneyFormatter: NumberFormatter = moneyFormatterBuilder
+	public static private(set) var moneyFormatter: NumberFormatter = moneyFormatterBuilder
 
 	private static var moneyFormatterBuilder: NumberFormatter {
 		let nf = NumberFormatter()
@@ -27,7 +27,7 @@ extension NumberFormatter {
 
 	///	Formatter which creates Decimal numbers format with exactly two decimal places,
 	///	uses Locale.current + includes the currency symbol / code
-	public static fileprivate(set) var currencyFormatter: NumberFormatter = currencyFormatterBuilder
+	public static private(set) var currencyFormatter: NumberFormatter = currencyFormatterBuilder
 
 	private static var currencyFormatterBuilder : NumberFormatter = {
 		let nf = NumberFormatter()
@@ -39,7 +39,7 @@ extension NumberFormatter {
 	}()
 
 	///	Locale aware formatter to output 1st, 2nd etc
-	public static fileprivate(set) var ordinalFormatter: NumberFormatter = ordinalFormatterBuilder
+	public static private(set) var ordinalFormatter: NumberFormatter = ordinalFormatterBuilder
 
 	private static var ordinalFormatterBuilder : NumberFormatter = {
 		let nf = NumberFormatter()
