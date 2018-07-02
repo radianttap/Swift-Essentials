@@ -138,7 +138,7 @@
 				D05E0D5E1F486EDF0000EAF1 /* StoryboardLoadable.swift */,
 			);
 			name = Controllers;
-			path = ../Controllers;
+			path = ../Sources/Controllers;
 			sourceTree = "<group>";
 		};
 		D05E0D5F1F486EDF0000EAF1 /* Foundation */ = {
@@ -154,7 +154,7 @@
 				D05E0D621F486EDF0000EAF1 /* String-Extensions.swift */,
 			);
 			name = Foundation;
-			path = ../Foundation;
+			path = ../Sources/Foundation;
 			sourceTree = "<group>";
 		};
 		D05E0D631F486EDF0000EAF1 /* Notifications */ = {
@@ -163,7 +163,7 @@
 				D05E0D641F486EDF0000EAF1 /* Notifying.swift */,
 			);
 			name = Notifications;
-			path = ../Notifications;
+			path = ../Sources/Notifications;
 			sourceTree = "<group>";
 		};
 		D05E0D651F486EDF0000EAF1 /* Operation */ = {
@@ -172,7 +172,7 @@
 				D05E0D661F486EDF0000EAF1 /* AsyncOperation.swift */,
 			);
 			name = Operation;
-			path = ../Operation;
+			path = ../Sources/Operation;
 			sourceTree = "<group>";
 		};
 		D05E0D671F486EDF0000EAF1 /* Views */ = {
@@ -183,7 +183,7 @@
 				D05E0D681F486EDF0000EAF1 /* DequeableView.swift */,
 			);
 			name = Views;
-			path = ../Views;
+			path = ../Sources/Views;
 			sourceTree = "<group>";
 		};
 		D0EE20171F95FCA600173B55 /* UIKit */ = {
@@ -195,7 +195,7 @@
 				D0EE201B1F95FCA600173B55 /* UIView-Extensions.swift */,
 			);
 			name = UIKit;
-			path = ../UIKit;
+			path = ../Sources/UIKit;
 			sourceTree = "<group>";
 		};
 		EBF2E1A40BFC35124C5337A2 /* Pods */ = {
@@ -219,7 +219,6 @@
 				D05E0D3D1F486D970000EAF1 /* Frameworks */,
 				D05E0D3E1F486D970000EAF1 /* Resources */,
 				D35A2D2B369933DF19EE9BE6 /* [CP] Embed Pods Frameworks */,
-				665D5FD8FAFBDBADEE640B8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,21 +276,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		665D5FD8FAFBDBADEE640B8F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A08CA1DCF4B853AD83A1FED1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
