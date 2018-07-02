@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		70826FA2CC5F1C57906A6F30 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E57E25CCD3F3289CDFDE7C /* Pods_Demo.framework */; };
+		D031813E20EA3DBF006F3183 /* UIColor-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813820EA3DBE006F3183 /* UIColor-Extensions.swift */; };
+		D031813F20EA3DBF006F3183 /* UITableView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813920EA3DBE006F3183 /* UITableView-Extensions.swift */; };
+		D031814120EA3DBF006F3183 /* Layer-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813B20EA3DBE006F3183 /* Layer-Extensions.swift */; };
+		D031814220EA3DBF006F3183 /* String-UI-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813C20EA3DBE006F3183 /* String-UI-Extensions.swift */; };
+		D031814320EA3DBF006F3183 /* UIAlertController-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031813D20EA3DBF006F3183 /* UIAlertController-Extensions.swift */; };
+		D031814520EA3FE4006F3183 /* UICollectionView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031814420EA3FE4006F3183 /* UICollectionView-Extensions.swift */; };
 		D036A9731F48F309001E671B /* NumberFormatter-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036A9711F48F309001E671B /* NumberFormatter-Extensions.swift */; };
 		D036A9741F48F309001E671B /* DateFormatter-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036A9721F48F309001E671B /* DateFormatter-Extensions.swift */; };
 		D05E0D441F486D970000EAF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E0D431F486D970000EAF1 /* AppDelegate.swift */; };
@@ -38,6 +44,12 @@
 		70E57E25CCD3F3289CDFDE7C /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3E0C438728D91F44A67A12 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		CA86D7B08949FB44DC5F5679 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D031813820EA3DBE006F3183 /* UIColor-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extensions.swift"; sourceTree = "<group>"; };
+		D031813920EA3DBE006F3183 /* UITableView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Extensions.swift"; sourceTree = "<group>"; };
+		D031813B20EA3DBE006F3183 /* Layer-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Layer-Extensions.swift"; sourceTree = "<group>"; };
+		D031813C20EA3DBE006F3183 /* String-UI-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-UI-Extensions.swift"; sourceTree = "<group>"; };
+		D031813D20EA3DBF006F3183 /* UIAlertController-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController-Extensions.swift"; sourceTree = "<group>"; };
+		D031814420EA3FE4006F3183 /* UICollectionView-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView-Extensions.swift"; sourceTree = "<group>"; };
 		D036A9711F48F309001E671B /* NumberFormatter-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter-Extensions.swift"; sourceTree = "<group>"; };
 		D036A9721F48F309001E671B /* DateFormatter-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter-Extensions.swift"; sourceTree = "<group>"; };
 		D05E0D401F486D970000EAF1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +201,12 @@
 		D0EE20171F95FCA600173B55 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D031813B20EA3DBE006F3183 /* Layer-Extensions.swift */,
+				D031813C20EA3DBE006F3183 /* String-UI-Extensions.swift */,
+				D031813D20EA3DBF006F3183 /* UIAlertController-Extensions.swift */,
+				D031813820EA3DBE006F3183 /* UIColor-Extensions.swift */,
+				D031813920EA3DBE006F3183 /* UITableView-Extensions.swift */,
+				D031814420EA3FE4006F3183 /* UICollectionView-Extensions.swift */,
 				D0EE20181F95FCA600173B55 /* UIFont-Extensions.swift */,
 				D0EE20191F95FCA600173B55 /* UILayoutPriority-Extensions.swift */,
 				D0EE201A1F95FCA600173B55 /* UIScrollView-Extensions.swift */,
@@ -325,17 +343,23 @@
 				D05E0D6E1F486EEC0000EAF1 /* Date-Extensions.swift in Sources */,
 				D0EE20141F95F7B000173B55 /* DispatchQueue-Extensions.swift in Sources */,
 				D0EE201C1F95FCA600173B55 /* UIFont-Extensions.swift in Sources */,
+				D031813F20EA3DBF006F3183 /* UITableView-Extensions.swift in Sources */,
 				D05E0D741F486EF80000EAF1 /* ReusableView.swift in Sources */,
+				D031813E20EA3DBF006F3183 /* UIColor-Extensions.swift in Sources */,
 				D036A9741F48F309001E671B /* DateFormatter-Extensions.swift in Sources */,
 				D0EE201F1F95FCA600173B55 /* UIView-Extensions.swift in Sources */,
 				D05E0D6F1F486EEC0000EAF1 /* String-Extensions.swift in Sources */,
+				D031814320EA3DBF006F3183 /* UIAlertController-Extensions.swift in Sources */,
+				D031814220EA3DBF006F3183 /* String-UI-Extensions.swift in Sources */,
 				D05E0D6D1F486EEC0000EAF1 /* Bundle-Extensions.swift in Sources */,
 				D05E0D731F486EF80000EAF1 /* NibLoadable.swift in Sources */,
 				D05E0D721F486EF80000EAF1 /* DequeableView.swift in Sources */,
 				D05E0D461F486D970000EAF1 /* ViewController.swift in Sources */,
 				D0EE201D1F95FCA600173B55 /* UILayoutPriority-Extensions.swift in Sources */,
+				D031814520EA3FE4006F3183 /* UICollectionView-Extensions.swift in Sources */,
 				D05E0D441F486D970000EAF1 /* AppDelegate.swift in Sources */,
 				D036A9731F48F309001E671B /* NumberFormatter-Extensions.swift in Sources */,
+				D031814120EA3DBF006F3183 /* Layer-Extensions.swift in Sources */,
 				D05E0D711F486EF30000EAF1 /* AsyncOperation.swift in Sources */,
 				D05E0D6B1F486EE80000EAF1 /* Embeddable.swift in Sources */,
 				D0EE20161F95F7B000173B55 /* OperationQueue-Extensions.swift in Sources */,
