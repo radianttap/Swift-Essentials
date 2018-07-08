@@ -15,7 +15,7 @@ open class AsyncOperation : Operation {
 		case executing
 		case finished
 
-		private var key: String {
+		fileprivate var key: String {
 			switch self {
 			case .ready:
 				return "isReady"
