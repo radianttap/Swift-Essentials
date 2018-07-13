@@ -100,7 +100,7 @@ extension UITableView {
 	public func register<T: UITableViewHeaderFooterView>(_: T.Type)
 		where T:NibReusableView
 	{
-		register(T.self, forHeaderFooterViewReuseIdentifier: T.reuseIdentifier)
+		register(T.nib, forHeaderFooterViewReuseIdentifier: T.reuseIdentifier)
 	}
 
 	public func dequeueReusableView<T: UITableViewHeaderFooterView>() -> T?
