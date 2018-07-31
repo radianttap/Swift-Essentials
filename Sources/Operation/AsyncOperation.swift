@@ -58,7 +58,7 @@ open class AsyncOperation : Operation {
 	//MARK: Setup
 
 	///	Do not override this method, ever. Call it from `workItem()` instead
-	final func markFinished() {
+	final public func markFinished() {
 		state = .finished
 	}
 
