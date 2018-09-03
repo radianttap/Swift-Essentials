@@ -30,7 +30,7 @@ open class AsyncOperation : Operation {
 	private let queue = DispatchQueue(label: "com.radianttap.Essentials.AsyncOperation")
 
 	public private(set) var state: State {
-		get { return _state }
+		get { return queue.sync { _state } }
 		set { queue.sync { _state = newValue } }
 	}
 
