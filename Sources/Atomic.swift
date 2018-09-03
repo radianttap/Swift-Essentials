@@ -35,7 +35,7 @@ public final class Atomic<A> {
 	}
 
 	/// Read access to the wrapped value.
-	public var value: A {
+	public var atomic: A {
 		return queue.sync { _value }
 	}
 
@@ -65,13 +65,13 @@ public final class Atomic<A> {
 
 extension Atomic: Equatable where A: Equatable {
 	public static func ==(lhs: Atomic, rhs: Atomic) -> Bool {
-		return lhs.value == rhs.value
+		return lhs.atomic == rhs.atomic
 	}
 }
 
 extension Atomic: Hashable where A: Hashable {
 	public var hashValue: Int {
-		return value.hashValue
+		return atomic.hashValue
 	}
 }
 
