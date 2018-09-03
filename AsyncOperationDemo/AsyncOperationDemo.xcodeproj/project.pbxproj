@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D074AB09213D8C0200B209D0 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074AB08213D8C0200B209D0 /* Atomic.swift */; };
 		D08ED031213D8537005B3C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ED030213D8537005B3C20 /* AppDelegate.swift */; };
 		D08ED033213D8537005B3C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ED032213D8537005B3C20 /* ViewController.swift */; };
 		D08ED036213D8537005B3C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08ED034213D8537005B3C20 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D074AB08213D8C0200B209D0 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = ../Sources/Atomic.swift; sourceTree = "<group>"; };
 		D08ED02D213D8537005B3C20 /* AsyncOperationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncOperationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08ED030213D8537005B3C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08ED032213D8537005B3C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		D08ED042213D8551005B3C20 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				D074AB08213D8C0200B209D0 /* Atomic.swift */,
 				D08ED043213D856C005B3C20 /* AsyncOperation.swift */,
 			);
 			name = Vendor;
@@ -163,6 +166,7 @@
 				D08ED046213D85F6005B3C20 /* DecodeOperation.swift in Sources */,
 				D08ED044213D856C005B3C20 /* AsyncOperation.swift in Sources */,
 				D08ED031213D8537005B3C20 /* AppDelegate.swift in Sources */,
+				D074AB09213D8C0200B209D0 /* Atomic.swift in Sources */,
 				D08ED048213D862E005B3C20 /* RequestOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
