@@ -23,7 +23,7 @@ extension UIViewController {
 			v.topAnchor.constraint(equalTo: pv.topAnchor),
 			v.leadingAnchor.constraint(equalTo: pv.leadingAnchor),
 			{
-				let lc = v.bottomAnchor.constraint(equalTo: pv.topAnchor)
+				let lc = v.bottomAnchor.constraint(equalTo: pv.bottomAnchor)
 				lc.priority = UILayoutPriority(rawValue: 999)
 				return lc
 			}(),
