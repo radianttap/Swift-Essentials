@@ -17,7 +17,7 @@ extension String {
 		let range = string.range(of: term, options: [.caseInsensitive, .diacriticInsensitive])
 
 		let attrString = NSMutableAttributedString(string: self)
-		attrString.addAttributes([NSAttributedStringKey.foregroundColor: color],
+		attrString.addAttributes([NSAttributedString.Key.foregroundColor: color],
 								 range: range)
 		return attrString
 	}
@@ -30,7 +30,7 @@ extension String {
 		let range = string.range(of: term, options: [.caseInsensitive, .diacriticInsensitive])
 
 		let attrString = NSMutableAttributedString(string: self)
-		var attr: [NSAttributedStringKey: Any] = [.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue]
+		var attr: [NSAttributedString.Key: Any] = [.strikethroughStyle: NSUnderlineStyle.single.rawValue]
 		if let color = color {
 			attr[.foregroundColor] = color
 		}

@@ -46,7 +46,7 @@ extension UIView {
 	open func springLayout(duration: TimeInterval = 0.3,
 						   usingSpringWithDamping: CGFloat = 0.96,
 						   initialSpringVelocity: CGFloat = 20,
-						   options: UIViewAnimationOptions = [.allowAnimatedContent],
+						   options: UIView.AnimationOptions = [.allowAnimatedContent],
 						   include: (() -> Void)? = nil,
 						   completion: ((Bool) -> Void)? = nil) {
 
