@@ -99,6 +99,9 @@ open class AsyncOperation : Operation {
 	//MARK: Control
 
 	final override public func start() {
+		
+		super.start()
+
 		if isCancelled {
 			state = .finished
 			return
