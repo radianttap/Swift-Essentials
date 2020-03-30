@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02506E92431F0CD00F7CD8F /* AdapterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02506E82431F0CD00F7CD8F /* AdapterOperation.swift */; };
 		D074AB09213D8C0200B209D0 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074AB08213D8C0200B209D0 /* Atomic.swift */; };
 		D08ED031213D8537005B3C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ED030213D8537005B3C20 /* AppDelegate.swift */; };
 		D08ED033213D8537005B3C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ED032213D8537005B3C20 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D02506E82431F0CD00F7CD8F /* AdapterOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterOperation.swift; sourceTree = "<group>"; };
 		D074AB08213D8C0200B209D0 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = ../Sources/Atomic.swift; sourceTree = "<group>"; };
 		D08ED02D213D8537005B3C20 /* AsyncOperationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncOperationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08ED030213D8537005B3C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				D08ED049213D867F005B3C20 /* Other */,
 				D08ED045213D85F6005B3C20 /* DecodeOperation.swift */,
 				D08ED047213D862E005B3C20 /* RequestOperation.swift */,
+				D02506E82431F0CD00F7CD8F /* AdapterOperation.swift */,
 			);
 			path = AsyncOperationDemo;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08ED033213D8537005B3C20 /* ViewController.swift in Sources */,
+				D02506E92431F0CD00F7CD8F /* AdapterOperation.swift in Sources */,
 				D08ED046213D85F6005B3C20 /* DecodeOperation.swift in Sources */,
 				D08ED044213D856C005B3C20 /* AsyncOperation.swift in Sources */,
 				D08ED031213D8537005B3C20 /* AppDelegate.swift in Sources */,

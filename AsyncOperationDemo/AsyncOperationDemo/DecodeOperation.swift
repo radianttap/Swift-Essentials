@@ -9,23 +9,25 @@
 import Foundation
 
 class DecodeOperation<T: Decodable>: AsyncOperation {
-
+	
 	var data: Data? = nil
 	var decoded: T? = nil
-
+	
 	override func workItem() {
-		print("starting decode op")
+		print("Decode: starting")
 		do {
 			guard let data = data else {
-				print("data not set")
+				print("Decode: executting, error: data not set")
 				markFinished()
 				return
 			}
-			print("decoding: \(data)")
+			
+			print("Decode: executing, decoding: \(data)")
 			self.decoded = try JSONDecoder().decode(T.self, from: data)
 		} catch let error {
-			print("ERROR: \(error.localizedDescription)")
+			print("Decode, error: \(error.localizedDescription)")
 		}
+		
 		self.markFinished()
 	}
 }

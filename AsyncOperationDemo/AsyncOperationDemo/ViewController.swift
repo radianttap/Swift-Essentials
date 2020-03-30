@@ -36,15 +36,17 @@ class ViewController: UIViewController {
 		let request = RequestOperation(request: URLRequest(url: URL(string: "https://reqres.in/api/users/2")!))
 		let decode = DecodeOperation<UserData>()
 
-		let adapter = BlockOperation() { [unowned decode, unowned request] in
-			print("in adapter operation setting data with bytes: \(request.data?.count ?? 0)")
+		let adapter = AdapterOperation() {
+			[unowned decode, unowned request] in
+			
+			print("Adapter: executing, set bytes to decode: \(request.data?.count ?? 0)")
 			decode.data = request.data
 		}
 
 		adapter.addDependency(request)
 		decode.addDependency(adapter)
 
-		// queue.maxConcurrentOperationCount = 1
+//		queue.maxConcurrentOperationCount = 1
 		queue.addOperations([request, adapter, decode], waitUntilFinished: true)
 
 		completion(decode.decoded?.data)
