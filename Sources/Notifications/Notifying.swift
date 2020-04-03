@@ -31,6 +31,13 @@ public class NotificationToken {
 
 public struct NotificationDescriptor<A> {
 	public let name: Notification.Name
+	public var convert: (Notification) -> A? = {_ in return nil }
+}
+
+extension NotificationDescriptor {
+	init(name: Notification.Name) {
+		self.name = name
+	}
 }
 
 extension NotificationCenter {
@@ -41,6 +48,18 @@ extension NotificationCenter {
 		return NotificationToken(token: addObserver(forName: descriptor.name, object: nil, queue: queue, using: {
 			note in
 			guard let object = note.object as? A else { return }
+			block(object)
+		}), center: self)
+	}
+
+	///	Use this to observe system Notifications. `A` must have proper `convert(Notification) -> A?` implementation
+	func addObserver<A>(forConvertedDescriptor descriptor: NotificationDescriptor<A>,
+						queue: OperationQueue? = nil,
+						using block: @escaping (A) -> ()) -> NotificationToken {
+
+		return NotificationToken(token: addObserver(forName: descriptor.name, object: nil, queue: queue, using: {
+			note in
+			guard let object = descriptor.convert(note) else { return }
 			block(object)
 		}), center: self)
 	}
