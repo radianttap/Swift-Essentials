@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0200E8D243785540058D01A /* UIKeyboard-Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0200E8B243785530058D01A /* UIKeyboard-Notifications.swift */; };
+		D0200E8E243785540058D01A /* UIContentSizeCategory-Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0200E8C243785530058D01A /* UIContentSizeCategory-Notifications.swift */; };
 		D0270AF920F2142700CCEB89 /* SuperfluousNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270AF820F2142700CCEB89 /* SuperfluousNetworkOperation.swift */; };
 		D0270AFB20F217FF00CCEB89 /* ProperNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270AFA20F217FF00CCEB89 /* ProperNetworkOperation.swift */; };
 		D0270AFD20F21A5E00CCEB89 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270AFC20F21A5E00CCEB89 /* NetworkOperation.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0200E8B243785530058D01A /* UIKeyboard-Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKeyboard-Notifications.swift"; sourceTree = "<group>"; };
+		D0200E8C243785530058D01A /* UIContentSizeCategory-Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIContentSizeCategory-Notifications.swift"; sourceTree = "<group>"; };
 		D0270AF820F2142700CCEB89 /* SuperfluousNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperfluousNetworkOperation.swift; sourceTree = "<group>"; };
 		D0270AFA20F217FF00CCEB89 /* ProperNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperNetworkOperation.swift; sourceTree = "<group>"; };
 		D0270AFC20F21A5E00CCEB89 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		D05E0D631F486EDF0000EAF1 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				D0200E8C243785530058D01A /* UIContentSizeCategory-Notifications.swift */,
+				D0200E8B243785530058D01A /* UIKeyboard-Notifications.swift */,
 				D05E0D641F486EDF0000EAF1 /* Notifying.swift */,
 			);
 			name = Notifications;
@@ -301,6 +307,7 @@
 				D05E0D701F486EF00000EAF1 /* Notifying.swift in Sources */,
 				D05E0D6E1F486EEC0000EAF1 /* Date-Extensions.swift in Sources */,
 				D074AB0B213D90C800B209D0 /* Atomic.swift in Sources */,
+				D0200E8E243785540058D01A /* UIContentSizeCategory-Notifications.swift in Sources */,
 				D0270AFB20F217FF00CCEB89 /* ProperNetworkOperation.swift in Sources */,
 				D0EE20141F95F7B000173B55 /* DispatchQueue-Extensions.swift in Sources */,
 				D0EE201C1F95FCA600173B55 /* UIFont-Extensions.swift in Sources */,
@@ -323,6 +330,7 @@
 				D05E0D441F486D970000EAF1 /* AppDelegate.swift in Sources */,
 				D0270AFD20F21A5E00CCEB89 /* NetworkOperation.swift in Sources */,
 				D036A9731F48F309001E671B /* NumberFormatter-Extensions.swift in Sources */,
+				D0200E8D243785540058D01A /* UIKeyboard-Notifications.swift in Sources */,
 				D031814120EA3DBF006F3183 /* Layer-Extensions.swift in Sources */,
 				D05E0D711F486EF30000EAF1 /* AsyncOperation.swift in Sources */,
 				D05E0D6B1F486EE80000EAF1 /* Embeddable.swift in Sources */,
