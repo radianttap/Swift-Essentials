@@ -18,3 +18,8 @@ extension Dictionary {
 	}
 }
 
+extension Array {
+	func anyInstance<T>() -> T? {
+		first(where: { $0 is T }) as? T
+	}
+}
