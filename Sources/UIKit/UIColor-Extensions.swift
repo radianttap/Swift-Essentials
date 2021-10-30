@@ -22,8 +22,8 @@ extension UIColor {
 		var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
 		hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
 
-		var rgb: UInt32 = 0
-		if !Scanner(string: hexSanitized).scanHexInt32(&rgb) { return nil }
+		var rgb: UInt64 = 0
+		if !Scanner(string: hexSanitized).scanHexInt64(&rgb) { return nil }
 
 		var r: CGFloat = 0.0
 		var g: CGFloat = 0.0
