@@ -13,3 +13,13 @@ extension UITableView {
 		return IndexSet(integersIn: 0..<self.numberOfSections)
 	}
 }
+
+
+extension UITableView {
+    func reloadWithoutAnimation(){
+        CATransaction.begin()
+        CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+        self.reloadData()
+        CATransaction.commit()
+    }
+}

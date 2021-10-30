@@ -14,3 +14,32 @@ extension UICollectionView {
 	}
 }
 
+
+extension UICollectionView {
+	func reloadDataWithoutAnimation() {
+		CATransaction.begin()
+		CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+
+		self.reloadData()
+
+		CATransaction.commit()
+	}
+
+	func reloadSectionsWithoutAnimation(_ sections: IndexSet) {
+		CATransaction.begin()
+		CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+		
+		self.reloadSections(sections)
+		
+		CATransaction.commit()
+	}
+
+	func reloadIndexPathsWithoutAnimation(_ indexPaths: [IndexPath]) {
+		CATransaction.begin()
+		CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+		
+		self.reloadItems(at: indexPaths)
+		
+		CATransaction.commit()
+	}
+}
