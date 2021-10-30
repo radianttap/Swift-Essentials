@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Dictionary {
+public extension Dictionary {
 	func combinedWith(_ other: [Key: Value]) -> [Key: Value] {
 		var dict = self
 		for (key, value) in other {

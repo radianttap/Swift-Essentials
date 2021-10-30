@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
 	var sectionsIndexSet: IndexSet {
 		return IndexSet(integersIn: 0..<self.numberOfSections)
 	}

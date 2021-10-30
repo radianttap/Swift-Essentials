@@ -8,15 +8,15 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
 	///	(view, parentView) -> Void
-	public typealias LayoutBlock = (UIView, UIView) -> Void
+	 typealias LayoutBlock = (UIView, UIView) -> Void
 
 	///	Embeds the `view` of the given UIViewController into supplied `parentView` (or into `self.view`, if `nil`).
 	///
 	///	Default value of `LayoutBlock` aligns the embedded `view` with the edges of the `parentView`, using priority=999 for the bottom and trailing constraints).
 	///	This helps to avoid auto-layout issues when embedding into zero-width or height container views.
-	public func embed<T>(controller vc: T, into parentView: UIView?, layout: LayoutBlock = {
+	 func embed<T>(controller vc: T, into parentView: UIView?, layout: LayoutBlock = {
 		v, pv in
 
 		let constraints: [NSLayoutConstraint] = [
@@ -49,7 +49,7 @@ extension UIViewController {
 		//	somewhere in calling scope
 	}
 
-	public func unembed(controller: UIViewController?) {
+	 func unembed(controller: UIViewController?) {
 		guard let controller = controller else { return }
 
 		controller.willMove(toParent: nil)

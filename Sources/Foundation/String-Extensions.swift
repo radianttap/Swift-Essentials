@@ -9,19 +9,19 @@
 
 import Foundation
 
-extension String {
+public extension String {
 	//	Credits: Leo Dabus
 	//	https://stackoverflow.com/questions/32305891/index-of-a-substring-in-a-string-with-swift
 
-	public func index(of string: String, options: CompareOptions = .literal) -> Index? {
+	 func index(of string: String, options: CompareOptions = .literal) -> Index? {
 		return range(of: string, options: options)?.lowerBound
 	}
 
-	public func endIndex(of string: String, options: CompareOptions = .literal) -> Index? {
+	 func endIndex(of string: String, options: CompareOptions = .literal) -> Index? {
 		return range(of: string, options: options)?.upperBound
 	}
 
-	public func indexes(of string: String, options: CompareOptions = .literal) -> [Index] {
+	 func indexes(of string: String, options: CompareOptions = .literal) -> [Index] {
 		var result: [Index] = []
 		var start = startIndex
 		while let range = range(of: string, options: options, range: start..<endIndex) {
@@ -31,7 +31,7 @@ extension String {
 		return result
 	}
 
-	public func ranges(of string: String, options: CompareOptions = .literal) -> [Range<Index>] {
+	 func ranges(of string: String, options: CompareOptions = .literal) -> [Range<Index>] {
 		var result: [Range<Index>] = []
 		var start = startIndex
 		while let range = range(of: string, options: options, range: start..<endIndex) {
@@ -44,8 +44,8 @@ extension String {
 
 //	Various other stuff
 
-extension String {
-	public static func random(withLength length: Int) -> String {
+public extension String {
+	 static func random(withLength length: Int) -> String {
 		let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 		let len = UInt32(letters.length)
 
