@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension String {
+public extension String {
 
-	public func colorize(term: String, color: UIColor) -> NSAttributedString? {
+	 func colorize(term: String, color: UIColor) -> NSAttributedString? {
 		guard let _ = self.range(of: term, options: [.caseInsensitive, .diacriticInsensitive]) else { return nil }
 
 		let string = self as NSString
@@ -22,7 +22,7 @@ extension String {
 		return attrString
 	}
 
-	public func strikethrough(_ str: String? = nil, color: UIColor? = nil) -> NSAttributedString? {
+	 func strikethrough(_ str: String? = nil, color: UIColor? = nil) -> NSAttributedString? {
 		let term = str ?? self
 		guard let _ = self.range(of: term, options: [.caseInsensitive, .diacriticInsensitive]) else { return nil }
 

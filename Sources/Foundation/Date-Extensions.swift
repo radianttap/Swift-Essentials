@@ -10,9 +10,9 @@
 import Foundation
 
 
-extension Date {
+public extension Date {
 
-	public init(year: Int? = nil, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) {
+	 init(year: Int? = nil, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) {
 
 		if let year = year, let month = month, let day = day, let hour = hour, let minute = minute, let second=second, year <= 0, month <= 0, day <= 0, hour < 0, minute < 0, second < 0 {
 			fatalError("Can not create date with negative values")
@@ -37,7 +37,7 @@ extension Date {
 
 
 
-	public func beginningOfDay() -> Date {
+	 func beginningOfDay() -> Date {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.year, Calendar.Component.month, Calendar.Component.day), from: self)
@@ -49,7 +49,7 @@ extension Date {
 
 
 
-	public func endOfDay() -> Date {
+	 func endOfDay() -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -62,7 +62,7 @@ extension Date {
 
 
 
-	public func beginningOfMonth() -> Date {
+	 func beginningOfMonth() -> Date {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.year, Calendar.Component.month), from: self)
@@ -74,7 +74,7 @@ extension Date {
 
 
 
-	public func endOfMonth() -> Date {
+	 func endOfMonth() -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -87,9 +87,9 @@ extension Date {
 
 }
 
-extension Date {
+public extension Date {
 
-	public func day() -> Int {
+	 func day() -> Int {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.day), from: self)
@@ -101,7 +101,7 @@ extension Date {
 
 
 
-	public func weekday() -> Int {
+	 func weekday() -> Int {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.weekday), from: self)
@@ -113,7 +113,7 @@ extension Date {
 
 
 
-	public func month() -> Int {
+	 func month() -> Int {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.month), from: self)
@@ -125,7 +125,7 @@ extension Date {
 
 
 
-	public func year() -> Int {
+	 func year() -> Int {
 
 		let calendar = Calendar.current
 		let components = calendar.dateComponents(Set(arrayLiteral: Calendar.Component.year), from: self)
@@ -136,7 +136,7 @@ extension Date {
 	}
 
 
-	public var isToday: Bool {
+	 var isToday: Bool {
 
 		if self > Date().endOfDay() {
 			return false
@@ -149,7 +149,7 @@ extension Date {
 	}
 
 
-	public func isEarlierThan(date: Date) -> Bool {
+	 func isEarlierThan(date: Date) -> Bool {
 
 		if self.timeIntervalSince1970 < date.timeIntervalSince1970 {
 			return true
@@ -160,7 +160,7 @@ extension Date {
 
 
 
-	public func isLaterThan(date: Date) -> Bool {
+	 func isLaterThan(date: Date) -> Bool {
 
 		if self.timeIntervalSince1970 > date.timeIntervalSince1970 {
 			return true
@@ -171,7 +171,7 @@ extension Date {
 
 
 
-	public func isEarlierThanOrEqualTo(date: Date) -> Bool {
+	 func isEarlierThanOrEqualTo(date: Date) -> Bool {
 
 		if self.timeIntervalSince1970 <= date.timeIntervalSince1970 {
 			return true
@@ -182,7 +182,7 @@ extension Date {
 
 
 
-	public func isLaterThanOrEqualTo(date: Date) -> Bool {
+	 func isLaterThanOrEqualTo(date: Date) -> Bool {
 
 		if self.timeIntervalSince1970 >= date.timeIntervalSince1970 {
 			return true
@@ -193,7 +193,7 @@ extension Date {
 
 
 
-	public func add(minutes: Int) -> Date {
+	 func add(minutes: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -206,7 +206,7 @@ extension Date {
 
 
 
-	public func subtract(minutes: Int) -> Date {
+	 func subtract(minutes: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -219,7 +219,7 @@ extension Date {
 
 
 
-	public func add(hours: Int) -> Date {
+	 func add(hours: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -232,7 +232,7 @@ extension Date {
 
 
 
-	public func subtract(hours: Int) -> Date {
+	 func subtract(hours: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -245,7 +245,7 @@ extension Date {
 
 
 
-	public func add(days: Int) -> Date {
+	 func add(days: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -258,7 +258,7 @@ extension Date {
 
 
 
-	public func subtract(days: Int) -> Date {
+	 func subtract(days: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -270,7 +270,7 @@ extension Date {
 	}
 
 
-	public func add(weeks: Int) -> Date {
+	 func add(weeks: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -282,7 +282,7 @@ extension Date {
 	}
 
 
-	public func add(months: Int) -> Date {
+	 func add(months: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -294,7 +294,7 @@ extension Date {
 
 
 
-	public func subtract(months: Int) -> Date {
+	 func subtract(months: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -319,7 +319,7 @@ extension Date {
 
 
 
-	public func subtract(years: Int) -> Date {
+	 func subtract(years: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
@@ -332,7 +332,7 @@ extension Date {
 
 
 
-	public func daysFrom(date: Date) -> Int {
+	 func daysFrom(date: Date) -> Int {
 
 		let calendar = Calendar.current
 		let earliest = (self as NSDate).earlierDate(date)
@@ -346,7 +346,7 @@ extension Date {
 
 
 
-	public func minutesFrom(date: Date) -> Int {
+	 func minutesFrom(date: Date) -> Int {
 
 		let calendar = Calendar.current
 		let earliest = (self as NSDate).earlierDate(date)

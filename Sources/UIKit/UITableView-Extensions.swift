@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 	var sectionsIndexSet: IndexSet {
 		return IndexSet(integersIn: 0..<self.numberOfSections)
 	}

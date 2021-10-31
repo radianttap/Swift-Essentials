@@ -9,17 +9,17 @@
 
 import UIKit
 
-extension UIView {
-	public var top: CGFloat {
+public extension UIView {
+	 var top: CGFloat {
 		return frame.minY
 	}
-	public var bottom: CGFloat {
+	 var bottom: CGFloat {
 		return frame.maxY
 	}
-	public var left: CGFloat {
+	 var left: CGFloat {
 		return frame.minX
 	}
-	public var right: CGFloat {
+	 var right: CGFloat {
 		return frame.maxX
 	}
 

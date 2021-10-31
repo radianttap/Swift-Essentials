@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIAlertController {
+public extension UIAlertController {
 	static func present(title: String?, message: String?, tintColor: UIColor? = nil, from controller: UIViewController? = nil) {
 		let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
 

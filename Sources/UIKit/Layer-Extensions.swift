@@ -9,7 +9,7 @@
 import UIKit
 
 
-extension UIView {
+public extension UIView {
 
 	func applyShadow(offset: CGSize = CGSize(width: 0, height: 2)) {
 		let layer = self.layer

@@ -9,17 +9,17 @@
 
 import UIKit
 
-extension UILayoutPriority {
+public extension UILayoutPriority {
 
 	/*
 	Credits: Keith Harrison
 	https://useyourloaf.com/blog/easier-swift-layout-priorities/
 	*/
-	public static func +(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+	 static func +(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
 		return UILayoutPriority(lhs.rawValue + rhs)
 	}
 
-	public static func -(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
+	 static func -(lhs: UILayoutPriority, rhs: Float) -> UILayoutPriority {
 		return UILayoutPriority(lhs.rawValue - rhs)
 	}
 }
