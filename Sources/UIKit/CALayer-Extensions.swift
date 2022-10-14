@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CALayer {
+public extension CALayer {
 	func addShadow(
 		opacity: Float = 0.2,
 		radius: CGFloat = 10,
