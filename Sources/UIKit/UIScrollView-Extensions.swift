@@ -9,10 +9,10 @@
 
 import UIKit
 
-extension UIScrollView {
+public extension UIScrollView {
 	///	Scroll so `rect` is just visible (nearest edges). Does nothing if rect completely visible.
 	///	If `rect` is larger than available bounds, then it scrolls so the top edge stays visible.
-	open func scrollTopRectToVisible(_ rect: CGRect, animated: Bool) {
+	func scrollTopRectToVisible(_ rect: CGRect, animated: Bool) {
 		let visibleRect = self.bounds
 		let diff = rect.height - visibleRect.height
 		if diff < 0 {

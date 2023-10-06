@@ -23,7 +23,7 @@ extension UIControl {
 	}
 
 	private struct AssociatedKeys {
-		static var targetClosure = "targetClosure"
+		static var targetClosure: Void?
 	}
 
 	private var targetClosure: UIControlTargetClosure? {

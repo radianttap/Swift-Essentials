@@ -307,7 +307,7 @@ public extension Date {
 
 
 
-	public func add(years: Int) -> Date {
+	func add(years: Int) -> Date {
 
 		let calendar = Calendar.current
 		var components = DateComponents()
